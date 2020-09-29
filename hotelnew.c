@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
+//Method Declaration
 
 void enter_name();
 void find_name();
@@ -9,14 +10,14 @@ void find_room();
 void checkout_guest();
 void view_bookings();
 
-
+//Instance Field Declaration
 FILE* view;
 FILE *fp;
 FILE* enter;
 char admin_entry[20] = {'y'};
 char user_entry[20] = {'y'};
 
-
+//structure defined to store name, room, bf and wifi required
 struct hotel
 {
     char name[20];
@@ -26,7 +27,7 @@ struct hotel
 
 }h;
 
-
+//main method
 int main(){ 
 
     int a,b,c;
@@ -211,7 +212,7 @@ int main(){
         }
 }
 
-
+//method declare to enter name
 void enter_name(){ 
 
     FILE *tmp1; 
@@ -282,7 +283,7 @@ void enter_name(){
     fclose(fp);
 }
 
-
+//method defined to find quest name
 void find_name(){
     char buffer[20];
     char entered_name[20];
@@ -310,7 +311,7 @@ void find_name(){
    fclose(fp);
 }
 
-
+//method definition for guest checkout
 void checkout_guest(){
     char buffer2[20];
     char checkout_name[20];
@@ -355,7 +356,7 @@ void checkout_guest(){
 
 }
 
-
+//method definition for finding rooms avalaible
 void find_room(){
     char buffer[20];
     char entered_room[20];
@@ -382,7 +383,7 @@ void find_room(){
    fclose(fp);
 }
 
-
+//method defined to view bookings
 void view_bookings(){
 
     enter = fopen("bookings.txt","r");	

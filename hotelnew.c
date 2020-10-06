@@ -1,3 +1,11 @@
+/*
+This is basically a C code implementation of a Hotel Management System
+
+The code when compiled generates an .exe file on Windows which can be both accessed by the user and the admin
+
+Although accessing admin privileges requires a password
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

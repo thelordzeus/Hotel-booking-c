@@ -1,1 +1,4 @@
 Manas 49 1GB no
+arnav 40 5gb yes
+arnav 50 1gb no
+cd "/Users/arnavshukla/gcc && gcc
